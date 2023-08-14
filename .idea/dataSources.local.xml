@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal" created-in="RM-232.8660.186">
+    <data-source name="second_project: development" uuid="6302f1b9-edf1-4fea-ba57-4c227b805000">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" exact-version="0" />
+      <schema-mapping />
+    </data-source>
+    <data-source name="second_project: test" uuid="41299613-10e6-4888-a55d-3a8271141b62">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" exact-version="0" />
+      <schema-mapping />
+    </data-source>
+    <data-source name="second_project: production" uuid="edb4355b-fe04-4d96-a99e-03fa5a659f57">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="POSTGRES" exact-version="0" />
+      <user-name>second_project</user-name>
+      <schema-mapping />
+    </data-source>
+  </component>
+</project>
