@@ -1,0 +1,33 @@
+<h2>Log in asdfasdf</h2>
+
+<section class="bg-gray-50 dark:bg-gray-900 mt-4">
+  <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
+    <h1>Login</h1>
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password %><br />
+    <%= f.password_field :password, autocomplete: "current-password" %>
+  </div>
+
+  <% if devise_mapping.rememberable? %>
+    <div class="field">
+      <%= f.check_box :remember_me %>
+      <%= f.label :remember_me %>
+    </div>
+  <% end %>
+
+  <div class="actions mt-2" style="background-color: #6262e2;border-radius: 5px">
+    <%= f.submit "Log in", class: "cursor-pointer w-full text-dark pointer hover:bg-primary-700
+    focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5
+    text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800" %>
+  </div>
+<% end %>
+  </div>
+</section>
+
+<%= render "devise/shared/links" %>

@@ -1,9 +1,10 @@
+<h2>Sign up</h2>
 
 <section class="bg-gray-50 dark:bg-gray-900 mt-4">
   <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
-    <h2>Sign up</h2>
+    <h1>Sign up Admin</h1>
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
-  <%= render "devise/shared/error_messages", resource: resource %>
+  <%= render "admins/shared/error_messages", resource: resource %>
 
   <div class="field">
     <%= f.label :email %><br />
@@ -11,11 +12,11 @@
   </div>
 
   <div class="field">
-    <%= f.label :password%>
+    <%= f.label :password %>
     <% if @minimum_password_length %>
     <em>(<%= @minimum_password_length %> characters minimum)</em>
     <% end %><br />
-    <%= f.password_field :password, autocomplete: "new-password", class: "format" %>
+    <%= f.password_field :password, autocomplete: "new-password" %>
   </div>
 
   <div class="field">
@@ -23,17 +24,13 @@
     <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
   </div>
 
-  <div class="actions">
-    <%= f.submit "Sign up", class: "bg-blue w-full text-dark pointer hover:bg-primary-700
+  <div class="actions mt-2" style="background-color: #6262e2;border-radius: 5px">
+    <%= f.submit "Sign up" , class: "cursor-pointer w-full text-dark pointer hover:bg-primary-700
     focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5
-    text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800" %>
+    text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"%>
   </div>
-
 <% end %>
   </div>
 </section>
-<p class="text-sm font-light text-gray-500 dark:text-gray-400">
-  Don’t have an account yet? <%= render "devise/shared/links" %>
-</p>
 
-
+<%= render "admins/shared/links" %>

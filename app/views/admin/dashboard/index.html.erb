@@ -1,12 +1,10 @@
-<%#= render 'navbar_admin' %>
+
 <!-- dashboard panel -->
----
-title: Tailwind CSS Dashboard Stacked Layout - Flowbite
-description: Get started with a free and open-source admin dashboard layout built with Tailwind CSS and Flowbite featuring charts, widgets, CRUD layouts, authentication pages, and more
-layout: dashboard
-group: layouts
-footer: true
----
+<div class="flex pt-16 overflow-hidden bg-gray-50 dark:bg-gray-900">
+
+  <%= render 'sidebar_admin' %>
+  <div id="main-content" class="relative w-full h-full overflow-y-auto bg-gray-50 lg:ml-64 dark:bg-gray-900">
+<main>
 <div class="px-4 pt-6">
   <div class="grid gap-4 xl:grid-cols-2 2xl:grid-cols-3">
     <!-- Main widget -->
@@ -102,7 +100,7 @@ footer: true
             <li class="py-3 sm:py-4">
               <div class="flex items-center justify-between">
                 <div class="flex items-center min-w-0">
-                  <img class="flex-shrink-0 w-10 h-10" src="/images/products/iphone.png" alt="imac image">
+                  <img class="flex-shrink-0 w-10 h-10" src="../assets/images/products/iphone.png" alt="imac image">
                   <div class="ml-3">
                     <p class="font-medium text-gray-900 truncate dark:text-white">
                       iPhone 14 Pro
@@ -124,7 +122,7 @@ footer: true
             <li class="py-3 sm:py-4">
               <div class="flex items-center justify-between">
                 <div class="flex items-center min-w-0">
-                  <img class="flex-shrink-0 w-10 h-10" src="/images/products/imac.png" alt="imac image">
+                  <img class="flex-shrink-0 w-10 h-10" src="../assets/images/products/imac.png" alt="imac image">
                   <div class="ml-3">
                     <p class="font-medium text-gray-900 truncate dark:text-white">
                       Apple iMac 27"
@@ -146,7 +144,7 @@ footer: true
             <li class="py-3 sm:py-4">
               <div class="flex items-center justify-between">
                 <div class="flex items-center min-w-0">
-                  <img class="flex-shrink-0 w-10 h-10" src="/images/products/watch.png" alt="watch image">
+                  <img class="flex-shrink-0 w-10 h-10" src="../assets/images/products/watch.png" alt="watch image">
                   <div class="ml-3">
                     <p class="font-medium text-gray-900 truncate dark:text-white">
                       Apple Watch SE
@@ -168,7 +166,7 @@ footer: true
             <li class="py-3 sm:py-4">
               <div class="flex items-center justify-between">
                 <div class="flex items-center min-w-0">
-                  <img class="flex-shrink-0 w-10 h-10" src="/images/products/ipad.png" alt="ipad image">
+                  <img class="flex-shrink-0 w-10 h-10" src="../assets/images/products/ipad.png" alt="ipad image">
                   <div class="ml-3">
                     <p class="font-medium text-gray-900 truncate dark:text-white">
                       Apple iPad Air
@@ -190,7 +188,7 @@ footer: true
             <li class="py-3 sm:py-4">
               <div class="flex items-center justify-between">
                 <div class="flex items-center min-w-0">
-                  <img class="flex-shrink-0 w-10 h-10" src="/images/products/imac.png" alt="imac image">
+                  <img class="flex-shrink-0 w-10 h-10" src=".././assets/images/products/imac.png" alt="imac image">
                   <div class="ml-3">
                     <p class="font-medium text-gray-900 truncate dark:text-white">
                       Apple iMac 24"
@@ -1443,5 +1441,8 @@ footer: true
         </a>
       </div>
     </div>
+  </div>
+</div>
+</main>
   </div>
 </div>
