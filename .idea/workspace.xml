@@ -5,25 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="312e875d-61c5-4ce4-8915-09f9ec23a0ad" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/controllers/user/dashboard_controller.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/user/dashboard/index.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/locales/fr.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/input.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/second_project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/second_project.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/about_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/about_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/controllers/user_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/user/user_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/user.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/admin/dashboard/admin_dashboard.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/admin/dashboard/admin_dashboard.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/products_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/products_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/admin.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/admin.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/home/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/home/index.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/users/passwords/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/passwords/new.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/partials/_navbar_admin.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/partials/_navbar_admin.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/users/sessions/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/sessions/new.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/application.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/application.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/environments/development.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/environments/development.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/migrate/20230814151236_devise_create_users.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/migrate/20230814151236_devise_create_users.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/locales/en.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/locales/en.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/locales/fr.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/locales/fr.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db/schema.rb" beforeDir="false" afterPath="$PROJECT_DIR$/db/schema.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,6 +56,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
+    "last_opened_file_path": "/home/kevin/projects/second_project/app/models",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -71,6 +68,9 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/models" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/controllers/user" />
     </key>
@@ -159,7 +159,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1692118176942</updated>
-      <workItem from="1692118195128" duration="3479000" />
+      <workItem from="1692118195128" duration="12085000" />
     </task>
     <servers />
   </component>
@@ -167,6 +167,6 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/second_project@second_project.rcov" NAME="second_project Coverage Results" MODIFIED="1692118889851" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="second_project" />
+    <SUITE FILE_PATH="coverage/second_project@second_project.rcov" NAME="second_project Coverage Results" MODIFIED="1692132868211" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="rcov" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" MODULE_NAME="second_project" />
   </component>
 </project>

@@ -11,7 +11,9 @@ module SecondProject
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.0
 
-    config.i18n.available_locales = [:en, :fr, :es]
+    I18n.load_path += Dir[Rails.root.join('lib', 'locale', '*.{rb,yml}')]
+    # Permitted locales available for the application
+    I18n.available_locales = [:en, :fr, :es]
 
     # Configuration for the application, engines, and railties goes here.
     #
