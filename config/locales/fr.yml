@@ -2,3 +2,5 @@
 fr:
   hello: "Bonjour"
   welcome: "Bienvenue dans notre application"
+  login: "Connectez-vous ici"
+  password: "mot de passe"

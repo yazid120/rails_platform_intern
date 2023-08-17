@@ -32,4 +32,6 @@
 en:
   hello: "Hello"
   welcome: "Welcome to our application"
+  login: "login here"
+  password: "password"
 
