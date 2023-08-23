@@ -6,4 +6,5 @@ class Admin < ApplicationRecord
 
 
   enum role: {super_admin: 'super_admin', admin: 'admin', operator: 'operator'}
+  has_many :products
 end

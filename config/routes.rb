@@ -17,9 +17,8 @@ Rails.application.routes.draw do
   end
 
   namespace :user do
-    root 'user/dashboard#index'
+    root 'dashboard#index'
   end
-  get 'user' ,to: 'user/dashboard#index'
 
   # routes students
   resources :students

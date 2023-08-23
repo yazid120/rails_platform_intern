@@ -65,4 +65,6 @@ gem "devise", "~> 4.9"
 gem "letter_opener", group: :development
 
 gem 'cancancan'
+gem 'ajax-datatables-rails'
+
 

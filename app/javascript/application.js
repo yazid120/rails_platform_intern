@@ -5,5 +5,5 @@ import "flowbite/dist/flowbite.turbo.js";
 import './sidebar';
 import './charts';
 import './dark-mode';
-
+import './users';
 
