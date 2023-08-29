@@ -6,4 +6,5 @@ import './sidebar';
 import './charts';
 import './dark-mode';
 import './users';
+import './tom-select';
 

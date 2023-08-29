@@ -1405,26 +1405,27 @@ false posix/Zulu
 true posixrules
 </TimeZones>
     </root>
-    <database id="2" parent="1" name="first_project_development">
-      <ObjectId>16397</ObjectId>
+    <database id="2" parent="1" name="second_project_development">
+      <Current>1</Current>
+      <ObjectId>16491</ObjectId>
       <OwnerName>kevin</OwnerName>
     </database>
-    <database id="3" parent="1" name="first_project_test">
-      <ObjectId>16398</ObjectId>
-      <OwnerName>kevin</OwnerName>
-    </database>
-    <database id="4" parent="1" name="kevin">
-      <ObjectId>16394</ObjectId>
-      <OwnerName>kevin</OwnerName>
-    </database>
-    <database id="5" parent="1" name="my_db">
-      <ObjectId>16388</ObjectId>
-      <OwnerName>postgres</OwnerName>
-    </database>
-    <database id="6" parent="1" name="postgres">
+    <database id="3" parent="1" name="postgres">
       <Comment>default administrative connection database</Comment>
       <ObjectId>5</ObjectId>
       <OwnerName>postgres</OwnerName>
+    </database>
+    <database id="4" parent="1" name="my_db">
+      <ObjectId>16388</ObjectId>
+      <OwnerName>postgres</OwnerName>
+    </database>
+    <database id="5" parent="1" name="test">
+      <ObjectId>16390</ObjectId>
+      <OwnerName>postgres</OwnerName>
+    </database>
+    <database id="6" parent="1" name="kevin">
+      <ObjectId>16394</ObjectId>
+      <OwnerName>kevin</OwnerName>
     </database>
     <database id="7" parent="1" name="rails_psql_project_development">
       <ObjectId>16395</ObjectId>
@@ -1434,64 +1435,67 @@ true posixrules
       <ObjectId>16396</ObjectId>
       <OwnerName>kevin</OwnerName>
     </database>
-    <database id="9" parent="1" name="second_project_development">
-      <Current>1</Current>
-      <ObjectId>16491</ObjectId>
+    <database id="9" parent="1" name="first_project_development">
+      <ObjectId>16397</ObjectId>
       <OwnerName>kevin</OwnerName>
     </database>
-    <database id="10" parent="1" name="second_project_test">
+    <database id="10" parent="1" name="first_project_test">
+      <ObjectId>16398</ObjectId>
+      <OwnerName>kevin</OwnerName>
+    </database>
+    <database id="11" parent="1" name="second_project_test">
       <ObjectId>16492</ObjectId>
       <OwnerName>kevin</OwnerName>
     </database>
-    <database id="11" parent="1" name="test">
-      <ObjectId>16390</ObjectId>
-      <OwnerName>postgres</OwnerName>
-    </database>
-    <role id="12" parent="1" name="kevin">
-      <CanLogin>1</CanLogin>
-      <ObjectId>16393</ObjectId>
-      <SuperRole>1</SuperRole>
-    </role>
-    <role id="13" parent="1" name="pg_checkpoint">
-      <ObjectId>4544</ObjectId>
-    </role>
-    <role id="14" parent="1" name="pg_database_owner">
+    <role id="12" parent="1" name="pg_database_owner">
       <ObjectId>6171</ObjectId>
     </role>
-    <role id="15" parent="1" name="pg_execute_server_program">
-      <ObjectId>4571</ObjectId>
+    <role id="13" parent="1" name="pg_read_all_data">
+      <ObjectId>6181</ObjectId>
     </role>
-    <role id="16" parent="1" name="pg_monitor">
+    <role id="14" parent="1" name="pg_write_all_data">
+      <ObjectId>6182</ObjectId>
+    </role>
+    <role id="15" parent="1" name="pg_monitor">
       <ObjectId>3373</ObjectId>
       <RoleGrants>3374
 3375
 3377</RoleGrants>
     </role>
-    <role id="17" parent="1" name="pg_read_all_data">
-      <ObjectId>6181</ObjectId>
-    </role>
-    <role id="18" parent="1" name="pg_read_all_settings">
+    <role id="16" parent="1" name="pg_read_all_settings">
       <ObjectId>3374</ObjectId>
     </role>
-    <role id="19" parent="1" name="pg_read_all_stats">
+    <role id="17" parent="1" name="pg_read_all_stats">
       <ObjectId>3375</ObjectId>
     </role>
-    <role id="20" parent="1" name="pg_read_server_files">
-      <ObjectId>4569</ObjectId>
-    </role>
-    <role id="21" parent="1" name="pg_signal_backend">
-      <ObjectId>4200</ObjectId>
-    </role>
-    <role id="22" parent="1" name="pg_stat_scan_tables">
+    <role id="18" parent="1" name="pg_stat_scan_tables">
       <ObjectId>3377</ObjectId>
     </role>
-    <role id="23" parent="1" name="pg_write_all_data">
-      <ObjectId>6182</ObjectId>
+    <role id="19" parent="1" name="pg_read_server_files">
+      <ObjectId>4569</ObjectId>
     </role>
-    <role id="24" parent="1" name="pg_write_server_files">
+    <role id="20" parent="1" name="pg_write_server_files">
       <ObjectId>4570</ObjectId>
     </role>
-    <role id="25" parent="1" name="postgres">
+    <role id="21" parent="1" name="pg_execute_server_program">
+      <ObjectId>4571</ObjectId>
+    </role>
+    <role id="22" parent="1" name="pg_signal_backend">
+      <ObjectId>4200</ObjectId>
+    </role>
+    <role id="23" parent="1" name="pg_checkpoint">
+      <ObjectId>4544</ObjectId>
+    </role>
+    <role id="24" parent="1" name="testuser">
+      <CanLogin>1</CanLogin>
+      <ObjectId>16389</ObjectId>
+    </role>
+    <role id="25" parent="1" name="kevin">
+      <CanLogin>1</CanLogin>
+      <ObjectId>16393</ObjectId>
+      <SuperRole>1</SuperRole>
+    </role>
+    <role id="26" parent="1" name="postgres">
       <BypassRls>1</BypassRls>
       <CanLogin>1</CanLogin>
       <CreateDb>1</CreateDb>
@@ -1499,10 +1503,6 @@ true posixrules
       <ObjectId>10</ObjectId>
       <Replication>1</Replication>
       <SuperRole>1</SuperRole>
-    </role>
-    <role id="26" parent="1" name="testuser">
-      <CanLogin>1</CanLogin>
-      <ObjectId>16389</ObjectId>
     </role>
     <tablespace id="27" parent="1" name="pg_default">
       <ObjectId>1663</ObjectId>
@@ -1514,18 +1514,18 @@ true posixrules
       <StateNumber>1</StateNumber>
       <OwnerName>postgres</OwnerName>
     </tablespace>
-    <schema id="29" parent="9" name="information_schema">
+    <schema id="29" parent="2" name="information_schema">
       <ObjectId>13224</ObjectId>
       <StateNumber>523</StateNumber>
       <OwnerName>postgres</OwnerName>
     </schema>
-    <schema id="30" parent="9" name="pg_catalog">
+    <schema id="30" parent="2" name="pg_catalog">
       <Comment>system catalog schema</Comment>
       <ObjectId>11</ObjectId>
       <StateNumber>517</StateNumber>
       <OwnerName>postgres</OwnerName>
     </schema>
-    <schema id="31" parent="9" name="public">
+    <schema id="31" parent="2" name="public">
       <Comment>standard public schema</Comment>
       <Current>1</Current>
       <ObjectId>2200</ObjectId>
